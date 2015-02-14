@@ -36,9 +36,9 @@ A table is the simplest variant which is most easily imagined to be an excel spr
 
 A list maintains it’s order by the record’s positions, like an array. The editor provides a UI to drag and drop records into the correct order. Every record in a list has a `position` attribute which is an integer.
 
-A tree maintains it’s order along with a parent relationship. Every tree has only one root node which is parentless. The editor provides a UI to drag and drop records into the correct order and to next them under different parents. Moving a node which has children also moves it’s children. Every record in a tree has `left`, `right`, and `parent_id` attributes.
+A tree maintains it’s order along with a parent relationship. Every tree has only one root node which is parentless. The editor provides a UI to drag and drop records into the correct order and to nest them under a different parent. Moving a node with children also moves it’s children. Every record in a tree has `left`, `right`, and `parent_id` attributes.
 
-A calendar maintain’s it’s order by the date or time associated with each record. A calendar can also optionally include an end date or time to create a time span for each record. The editor provides a calendar-like UI for editing and moving records to different dates and times. Every record in a calendar has either `start_at` and `end_at` or `start_on` and `end_on` attributes. `end_*` attributes might be empty.
+A calendar maintains it’s order by the date or time associated with each record. A calendar can also optionally include an end date or time to create a time span for each record. The editor provides a calendar-like UI for editing and moving records to different dates and times. Every record in a calendar has either `start_at` and `end_at` or `start_on` and `end_on` attributes. `end_*` attributes might be empty.
 
 A map maintain’s it’s positions by the global position associated with each record. A map-like UI is provided to manage the records. Every record in a map has `longitude`, `latitude`, and `address` attributes.
 
